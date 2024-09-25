@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List App - Easy Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header  class="navbar">
+        <div class="navbar-brand">
+            <img src="TriApp.jpg" alt="Company Logo" class="logo" style="max-width: 10%; border: #92afd7 solid; border-radius: 20%">
+            <a href="#" class="navbar-name">Application's</a>
+        </div>
+        <ul class="navbar-links desktop-nav">
+            <li><a href="/Tri-App/index.html">< Go Back</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div> <!-- Toggle Button for small screens -->
+            <!-- Sidebar for small screens -->
+    <ul class="navbar-links sidebar" id="navbar">
+        <div class="sidebar-header">
+            <img src="TriApp.jpg" alt="Company Logo" class="logo" style="max-width: 30%; border: #92afd7 solid; border-radius: 20%;">
+            <a href="#" class="sidebar-brand">Application's</a>
+        </div>
+        <li><a href="/Tri-App/index.html">< Go Back</a></li>
+    </ul>
+    </header>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="icon.png" alt="Icon"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="add your text">
+                <button onclick="addtask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!--<li class="checked">task 1</li>
+                <li>task 2</li>
+                <li>task 3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
